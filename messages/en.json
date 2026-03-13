@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "menu": "Menu",
+    "delivery": "Delivery",
+    "booking": "Booking",
+    "about": "About",
+    "contacts": "Contacts",
+    "order": "Order"
+  },
+  "hero": {
+    "title": "Podushechnaya",
+    "subtitle": "Panoramic view. European cuisine. Own bakery.",
+    "cta_menu": "View Menu",
+    "cta_order": "Order Delivery",
+    "cta_booking": "Reserve a Table",
+    "supertitle": "Panoramic view. European cuisine. Own bakery."
+  },
+  "menu": {
+    "title": "Menu",
+    "add": "Add to Cart",
+    "added": "Added",
+    "search": "Search menu"
+  },
+  "cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "total": "Total",
+    "checkout": "Checkout",
+    "items": "{count} items"
+  },
+  "order": {
+    "title": "Delivery & Pickup",
+    "delivery": "Delivery",
+    "pickup": "Pickup",
+    "free_delivery": "Free delivery across Tashkent",
+    "hours": "Orders: 09:00 — 00:00",
+    "address": "Delivery address",
+    "pickup_time": "Pickup time",
+    "name": "Name",
+    "phone": "Phone",
+    "submit": "Place Order",
+    "payment": {
+      "title": "Payment method",
+      "electronic": "E-money",
+      "card": "Bank card",
+      "transfer": "Bank transfer",
+      "cash": "Cash"
+    }
+  },
+  "booking": {
+    "title": "Reserve a Table",
+    "hall": "Hall",
+    "hall_main": "Main Hall",
+    "hall_banquet": "Banquet Hall",
+    "hall_terrace": "Summer Terrace",
+    "date": "Date",
+    "time": "Time",
+    "guests": "Number of guests",
+    "name": "Name",
+    "phone": "Phone",
+    "comment": "Comment",
+    "comment_placeholder": "Special requests",
+    "submit": "Reserve",
+    "success": "Booking confirmed! We will contact you."
+  },
+  "about": {
+    "title": "About Us",
+    "description": "A restaurant with a city view. We prepare European and Italian cuisine with an author's touch. Our own bakery, fresh bread daily, breakfast until 5 PM.",
+    "features": {
+      "panorama": "Panoramic view",
+      "bakery": "Own bakery",
+      "banquet": "Banquet hall",
+      "parking": "Free parking",
+      "terrace": "Summer terrace",
+      "breakfast": "Breakfast until 17:00"
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "address": "17 Osiyo St, Tashkent",
+    "phone": "+998 90 999 77 61",
+    "hours": "10:00 — 23:00",
+    "hours_label": "Working hours",
+    "delivery_hours": "09:00 — 00:00",
+    "delivery_hours_label": "Order hours"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  }
+}

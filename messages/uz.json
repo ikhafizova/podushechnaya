@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "menu": "Menyu",
+    "delivery": "Yetkazib berish",
+    "booking": "Bron qilish",
+    "about": "Biz haqimizda",
+    "contacts": "Aloqa",
+    "order": "Buyurtma"
+  },
+  "hero": {
+    "title": "Podushechnaya",
+    "subtitle": "Panoramik ko'rinish. Yevropa oshxonasi. O'z nonvoyxonasi.",
+    "cta_menu": "Menyuni ko'rish",
+    "cta_order": "Yetkazib berish",
+    "cta_booking": "Stol band qilish",
+    "supertitle": "Panoramik ko'rinish. Yevropa oshxonasi. O'z nonvoyxonasi."
+  },
+  "menu": {
+    "title": "Menyu",
+    "add": "Savatga",
+    "added": "Qo'shildi",
+    "search": "Menyuda qidirish"
+  },
+  "cart": {
+    "title": "Savat",
+    "empty": "Savat bo'sh",
+    "total": "Jami",
+    "checkout": "Buyurtma berish",
+    "items": "{count} ta mahsulot"
+  },
+  "order": {
+    "title": "Yetkazib berish va olib ketish",
+    "delivery": "Yetkazib berish",
+    "pickup": "Olib ketish",
+    "free_delivery": "Butun Toshkent bo'ylab bepul yetkazib berish",
+    "hours": "Buyurtmalar: 09:00 — 00:00",
+    "address": "Yetkazib berish manzili",
+    "pickup_time": "Olib ketish vaqti",
+    "name": "Ism",
+    "phone": "Telefon",
+    "submit": "Buyurtma berish",
+    "payment": {
+      "title": "To'lov usuli",
+      "electronic": "Elektron pul",
+      "card": "Bank kartasi",
+      "transfer": "Bank o'tkazmasi",
+      "cash": "Naqd pul"
+    }
+  },
+  "booking": {
+    "title": "Stol band qilish",
+    "hall": "Zal",
+    "hall_main": "Asosiy zal",
+    "hall_banquet": "Banket zali",
+    "hall_terrace": "Yozgi teras",
+    "date": "Sana",
+    "time": "Vaqt",
+    "guests": "Mehmonlar soni",
+    "name": "Ism",
+    "phone": "Telefon",
+    "comment": "Izoh",
+    "comment_placeholder": "Maxsus istaklaringiz",
+    "submit": "Band qilish",
+    "success": "Bron tasdiqlandi! Siz bilan bog'lanamiz."
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Shahar manzarasiga ega restoran. Biz muallif qarashi bilan Yevropa va italyan oshxonasini tayyorlaymiz. O'z nonvoyxonasi, har kuni yangi non, ertalabki ovqat soat 17:00 gacha.",
+    "features": {
+      "panorama": "Panoramik ko'rinish",
+      "bakery": "O'z nonvoyxonasi",
+      "banquet": "Banket zali",
+      "parking": "Bepul avtoturargoh",
+      "terrace": "Yozgi teras",
+      "breakfast": "17:00 gacha nonushta"
+    }
+  },
+  "contacts": {
+    "title": "Aloqa",
+    "address": "Osiyo ko'chasi, 17, Toshkent",
+    "phone": "+998 90 999 77 61",
+    "hours": "10:00 — 23:00",
+    "hours_label": "Ish vaqti",
+    "delivery_hours": "09:00 — 00:00",
+    "delivery_hours_label": "Buyurtma vaqti"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan"
+  }
+}
