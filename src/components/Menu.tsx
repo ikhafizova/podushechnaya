@@ -122,11 +122,17 @@ export default function Menu() {
         </div>
       )}
 
-      {/* Корзина — drawer */}
-      {cartOpen && (
-        <>
-          <div className="fixed inset-0 bg-black/30 z-50" onClick={() => setCartOpen(false)} />
-          <div className="fixed right-0 top-0 bottom-0 w-full max-w-sm bg-white z-50 flex flex-col shadow-2xl">
+      {/* Корзина — drawer с плавной анимацией */}
+      <>
+        <div
+          className={`fixed inset-0 bg-black/30 z-50 transition-opacity duration-300 ${
+            cartOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
+          onClick={() => setCartOpen(false)}
+        />
+        <div className={`fixed right-0 top-0 bottom-0 w-full max-w-sm bg-white z-50 flex flex-col shadow-2xl transition-transform duration-300 ${
+          cartOpen ? "translate-x-0" : "translate-x-full"
+        }`}>
             <div className="flex items-center justify-between px-6 py-5 border-b border-[var(--color-border)]">
               <h3 className="font-serif text-xl font-semibold text-[var(--color-text)]">{tCart("title")}</h3>
               <button onClick={() => setCartOpen(false)} className="text-[var(--color-muted)] hover:text-[var(--color-text)]">
@@ -167,8 +173,8 @@ export default function Menu() {
               </a>
             </div>
           </div>
-        </>
-      )}
+        </div>
+      </>
     </section>
   );
 }

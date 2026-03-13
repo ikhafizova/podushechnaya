@@ -1,7 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const heroSlides = [
   "/images/hero/hero1.webp",
@@ -11,6 +11,7 @@ const heroSlides = [
 export default function Hero() {
   const t = useTranslations("hero");
   const [current, setCurrent] = useState(0);
+  const touchStartX = useRef<number>(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,6 +26,14 @@ export default function Hero() {
     <section
       id="hero"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[var(--color-dark)]"
+      onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+      onTouchEnd={(e) => {
+        const diff = touchStartX.current - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0) setCurrent((c) => (c + 1) % heroSlides.length);
+          else setCurrent((c) => (c - 1 + heroSlides.length) % heroSlides.length);
+        }
+      }}
     >
       {/* Все слайды стекаются, активный — opacity 1 */}
       {heroSlides.map((src, idx) => (
@@ -44,9 +53,9 @@ export default function Hero() {
       {/* Контент */}
       <div className="relative z-20 text-center text-white w-full px-6">
         {/* Заголовок */}
-        <h1 className="font-serif text-[52px] md:text-[64px] font-bold mb-5 leading-[1.1] mx-auto">
+        <h1 className="font-serif text-[32px] md:text-[64px] font-bold mb-5 leading-[1.1] mx-auto">
           Ресторан для тех, кто ценит<br />
-          атмосферу уюта и хорошую еду
+          атмосферу уюта и&nbsp;хорошую еду
         </h1>
         {/* Подзаголовок */}
         <p className="text-sm md:text-base text-white leading-relaxed mb-10 max-w-xl mx-auto">

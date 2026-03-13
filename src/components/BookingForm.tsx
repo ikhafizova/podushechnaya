@@ -98,7 +98,7 @@ export default function BookingForm() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-[var(--color-muted)] mb-2">{t("date")}</label>
               <input
@@ -137,7 +137,7 @@ export default function BookingForm() {
             </select>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-medium text-[var(--color-muted)] mb-2">{t("name")}</label>
               <input
